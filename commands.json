@@ -42,5 +42,78 @@
         "target": "scan_result.txt"
       }
     ]
+  },
+  "نصب کتابخانه": {
+    "type": "macro",
+    "steps": [
+      {
+        "action": "terminal"
+      },
+      {
+        "action": "wait",
+        "seconds": 1
+      },
+      {
+        "action": "speak",
+        "text": "Which Python library would you like to install?"
+      },
+      {
+        "action": "input",
+        "prompt": "Enter library name:"
+      },
+      {
+        "action": "shell",
+        "cmd": "pip install {input}"
+      },
+      {
+        "action": "speak",
+        "text": "Library installation completed."
+      }
+    ]
+  },
+  "باز کردن وب سایت": {
+    "type": "macro",
+    "steps": [
+      {
+        "action": "speak",
+        "text": "Opening website..."
+      },
+      {
+        "action": "input",
+        "prompt": "Enter URL:"
+      },
+      {
+        "action": "open",
+        "target": "{input}"
+      },
+      {
+        "action": "speak",
+        "text": "Website opened."
+      }
+    ]
+  },
+  "اجرای دستور شل": {
+    "type": "macro",
+    "steps": [
+      {
+        "action": "terminal"
+      },
+      {
+        "action": "speak",
+        "text": "Enter shell command to run:"
+      },
+      {
+        "action": "input",
+        "prompt": "Command:"
+      },
+      {
+        "action": "shell",
+        "cmd": "{input}"
+      },
+      {
+        "action": "speak",
+        "text": "Command executed."
+      }
+    ]
   }
 }
