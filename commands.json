@@ -1,0 +1,46 @@
+{
+  "run demo": {
+    "type": "macro",
+    "steps": [
+      {
+        "action": "terminal"
+      },
+      {
+        "action": "wait",
+        "seconds": 1
+      },
+      {
+        "action": "open",
+        "target": "https://www.google.com"
+      },
+      {
+        "action": "speak",
+        "text": "Google opened"
+      }
+    ]
+  },
+  "اسکن کتاب": {
+    "type": "macro",
+    "steps": [
+      {
+        "action": "terminal"
+      },
+      {
+        "action": "wait",
+        "seconds": 1
+      },
+      {
+        "action": "speak",
+        "text": "Please place the book on the scanner and press Enter."
+      },
+      {
+        "action": "shell",
+        "cmd": "echo Scanning > scan_result.txt"
+      },
+      {
+        "action": "open",
+        "target": "scan_result.txt"
+      }
+    ]
+  }
+}
