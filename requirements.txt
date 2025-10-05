@@ -1,0 +1,7 @@
+SpeechRecognition
+pyttsx3
+Pillow
+rapidfuzz
+pyaudio
+sentence-transformers
+torch
